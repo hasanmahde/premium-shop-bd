@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <title>Premium Shop BD | প্রিমিয়াম ফ্যাশন</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">সারা বাংলাদেশে ডেলিভারি • ৳১,৫০০+ অর্ডারে ফ্রি ডেলিভারি</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Premium Shop BD home">
+      <span class="brand-mark">P<span>.</span></span>
+      <span class="brand-copy"><b>PREMIUM SHOP <i>BD</i></b><small>STYLE THAT SPEAKS</small></span>
+    </a>
+    <nav class="main-nav">
+      <a href="#collection">নতুন কালেকশন</a><a href="#collection">পুরুষ</a><a href="#collection">নারী</a><a href="#collection">এক্সেসরিজ</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchFocus" aria-label="Search">⌕</button>
+      <button class="cart-btn" id="openCart">ব্যাগ <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">THE NEW SEASON · 2026</span>
+        <h1>আপনার স্টাইল,<br><em>আপনার পরিচয়।</em></h1>
+        <p>প্রতিদিনের লুকে আনুন প্রিমিয়াম ছোঁয়া। বেছে নিন আপনার পছন্দের ফ্যাশন কালেকশন।</p>
+        <a class="primary-btn" href="#collection">কালেকশন দেখুন <span>↗</span></a>
+      </div>
+      <div class="hero-art">
+        <div class="hero-image"></div>
+        <div class="hero-stamp">PREMIUM<br><b>ESSENTIALS</b><br>EST. 2026</div>
+        <div class="hero-caption">EFFORTLESS STYLE / EVERY DAY</div>
+      </div>
+    </section>
+
+    <section class="catalog" id="collection">
+      <div class="section-heading">
+        <div><span class="eyebrow dark">CURATED FOR YOU</span><h2>এক্সপ্লোর <em>কালেকশন</em></h2></div>
+        <span class="product-total" id="productTotal">১২টি পণ্য</span>
+      </div>
+
+      <div class="toolbar">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="আপনার পছন্দের পণ্য খুঁজুন..." aria-label="পণ্য খুঁজুন"><kbd>SEARCH</kbd></label>
+        <div class="category-tabs" role="group" aria-label="ক্যাটাগরি">
+          <button class="tab active" data-category="সব">সব</button>
+          <button class="tab" data-category="পুরুষ">পুরুষ</button>
+          <button class="tab" data-category="নারী">নারী</button>
+          <button class="tab" data-category="কিডস">কিডস</button>
+          <button class="tab" data-category="টিনস">টিনস</button>
+        </div>
+      </div>
+
+      <div class="filter-row">
+        <span class="filter-label">ক্যাটাগরি</span>
+        <div class="chips" id="chips">
+          <button class="chip active" data-filter="সব">সব পণ্য</button>
+          <button class="chip" data-filter="টি-শার্ট">টি-শার্ট</button>
+          <button class="chip" data-filter="শার্ট">শার্ট</button>
+          <button class="chip" data-filter="হুডি">হুডি</button>
+          <button class="chip" data-filter="জ্যাকেট">জ্যাকেট</button>
+          <button class="chip" data-filter="প্যান্ট">প্যান্ট</button>
+          <button class="chip" data-filter="এক্সেসরিজ">এক্সেসরিজ</button>
+        </div>
+        <select id="sortSelect" aria-label="পণ্য সাজান"><option value="featured">সাজান: ফিচারড</option><option value="low">দাম: কম থেকে বেশি</option><option value="high">দাম: বেশি থেকে কম</option></select>
+      </div>
+
+      <div class="active-filter" id="activeFilter" hidden></div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>দুঃখিত, এই নামে কোনো পণ্য পাওয়া যায়নি।</div>
+    </section>
+
+    <section class="service-strip">
+      <div><span>01</span><b>ক্যাশ অন ডেলিভারি</b><small>পণ্য হাতে পেয়ে পেমেন্ট</small></div>
+      <div><span>02</span><b>সহজ রিটার্ন</b><small>নির্বাচিত পণ্যে সহজ রিটার্ন</small></div>
+      <div><span>03</span><b>সারা দেশে ডেলিভারি</b><small>আপনার ঠিকানায় পৌঁছে যাবে</small></div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">P<span>.</span></span><span class="brand-copy"><b>PREMIUM SHOP <i>BD</i></b><small>STYLE THAT SPEAKS</small></span></a><p>© 2026 Premium Shop BD. সর্বস্বত্ব সংরক্ষিত।</p><span class="footer-note">MADE FOR YOUR EVERYDAY</span></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="drawer-head"><div><span class="eyebrow dark">YOUR SELECTION</span><h3>আপনার শপিং ব্যাগ</h3></div><button id="closeCart" class="close-btn" aria-label="Close">×</button></div>
+    <div id="cartItems" class="cart-items"><p class="cart-empty">আপনার ব্যাগ এখনো খালি।</p></div>
+    <div class="cart-bottom"><div class="subtotal"><span>সর্বমোট</span><b id="cartTotal">৳০</b></div><button class="checkout-btn" id="checkoutBtn">অর্ডার করতে যোগাযোগ করুন ↗</button><small>ডেমো স্টোর: অর্ডার নিশ্চিত করতে দোকানের সাথে যোগাযোগ করুন।</small></div>
+  </aside>
+  <div class="toast" id="toast">ব্যাগে যোগ করা হয়েছে</div>
+  <script src="script.js"></script>
+</body>
+</html>
